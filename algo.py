@@ -1,18 +1,23 @@
-board = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0]
-]
-def find_first_available_move(board):
-    emptycell = []
-    for i in range(3):
-        for j in range(3):
-            if board[i][j] == 0:
-                emptycell.append([i, j])
-    return emptycell
-                
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 
-for row in board:
-    print(row)
+app = Flask(__name__)
+CORS(app)
 
-print(find_first_available_move(board))
+@app.route("/", methods=["POST", "OPTIONS"])
+def receive_state():
+    if request.method == "OPTIONS":
+        return '', 200  
+
+    data = request.get_json()
+    print("Received state:", data)
+    
+    for i, cell in enumerate(data['board']):
+        print(f"Cell {i}: {cell}")
+    
+    data['board'][1] = "X"
+
+    return jsonify({"message": data})
+
+if __name__ == "__main__":
+    app.run(debug=True)
