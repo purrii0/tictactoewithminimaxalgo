@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-A simple Tic Tac Toe game implemented in **[technology/language used, e.g., React and JavaScript]**. Play the classic two-player game right in your browser!
+A simple Tic Tac Toe game implemented in React. Play the classic two-player game right in your browser!
 
 ## Features
 
@@ -16,9 +16,9 @@ A simple Tic Tac Toe game implemented in **[technology/language used, e.g., Reac
    ```
 2. Navigate to the project directory:
    ```bash
-   cd tictactoe
+   cd  cd tictactoewithminimaxalgo
    ```
-3. Install dependencies (if applicable):
+3. Install dependencies:
    ```bash
    npm install
    ```
