@@ -38,5 +38,3 @@ A simple Tic Tac Toe game implemented in **[technology/language used, e.g., Reac
 Feel free to fork the project and submit pull requests to enhance functionality or fix bugs.
 
 ---
-
-Replace placeholders like repository URLs or technologies if needed. Let me know if you’d like me to adapt this further for your specific implementation!
